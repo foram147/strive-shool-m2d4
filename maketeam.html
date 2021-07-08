@@ -12,34 +12,32 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css">
-  
+    
 </head>
 <body>
-    <form id="maketeam-Form"class="mx-5 mt-15">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Team Name</label>
-          <input type="text" class="form-control" id="maketeam-Name" aria-describedby="emailHelp">
-      
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Number of Members</label>
-          <input type="text" class="form-control" id="numof-mem">
-        </div>
-        <div class="form-group form-check">
-         
-         
-        </div>
-        <button id="makeTeam-Btn" type="submit" class="btn btn-primary">Submit</button>
-      </form>
-
-
+    <div class="container">
+    <div class="row h-n5">
     
-    <button id="addparticipant-btn" type="submit" style="    margin-top: 43px;
-    margin-left: 48px;" class="btn btn-primary mb-5">Add Paticipant</button>
-  </form>
+    <div class="col-12 mx-5 mt-5">
+            <select id="tmMem"></select>
+    </div>
+    <div class="col-12 mx-5">
+            <input type="text" style="margin-top: 50px;" class="form-control" placeholder="Please enter participants" id="addName">
+            <button id="makeTeam-Btn" type="submit" onclick="makeTeam()" class="btn btn-primary mt-3">Submit</button>
+            
+            <ul id="myUL" class="pt-3"></ul>
+    </div>
+    
+    
+    </div></div>
+
+      
+    
+    
+  
 
 
-<script src="maketeam.js"></script>
+  <script src="maketeam.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
